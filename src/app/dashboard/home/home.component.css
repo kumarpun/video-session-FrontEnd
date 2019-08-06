@@ -1,0 +1,9 @@
+.column-center {
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.list-item {
+    justify-content: center;
+    margin-left: 200px;
+}

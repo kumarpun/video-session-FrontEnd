@@ -13,6 +13,8 @@ import { MeetingComponent } from './dashboard/meeting/meeting.component';
 import { MeetService } from './services/createmeeting.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormServices } from './services/form';
+import { SessionComponent } from './dashboard/session/session.component';
+import { TrueComponent } from './dashboard/true/true.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { FormServices } from './services/form';
     ClientComponent,
     DeveloperComponent,
     BookMeetingComponent,
-    MeetingComponent
+    MeetingComponent,
+    SessionComponent,
+    TrueComponent
   ],
   imports: [
     BrowserModule,

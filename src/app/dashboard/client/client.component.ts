@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MeetService } from '../../services/createmeeting.service';
 import {DataSource } from '@angular/cdk/collections';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-client',
@@ -14,7 +15,9 @@ export class ClientComponent implements OnInit {
   booked: boolean = true;
   dataSource = new MeetingDataSource(this.api);
 
-  constructor(private api: MeetService) { }
+  constructor(
+    private api: MeetService,
+    private router: Router) { }
 
   ngOnInit() {
     this.api.getTrueBook()
@@ -24,6 +27,10 @@ export class ClientComponent implements OnInit {
     }, err => {
       console.log(err);
     });
+   }
+
+   session() {
+     this.router.navigate(['/session']);
    }
 }
 

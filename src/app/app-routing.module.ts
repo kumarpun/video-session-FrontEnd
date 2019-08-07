@@ -5,6 +5,7 @@ import { ClientComponent } from './dashboard/client/client.component';
 import { DeveloperComponent } from './dashboard/developer/developer.component';
 import { BookMeetingComponent } from './dashboard/book-meeting/book-meeting.component';
 import { MeetingComponent } from './dashboard/meeting/meeting.component';
+import { SessionComponent } from './dashboard/session/session.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'book',
     component: BookMeetingComponent
+  },
+  {
+    path: 'session',
+    component: SessionComponent
   }
 ];
 
